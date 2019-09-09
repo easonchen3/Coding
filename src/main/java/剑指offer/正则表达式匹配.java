@@ -10,14 +10,16 @@ import java.util.regex.Pattern;
 public class 正则表达式匹配 {
 
     public static void main(String[] args){
-
+        match("aaa".toCharArray(),"ab*a".toCharArray());
     }
 
-    public boolean match(char[] str, char[] pattern)
+    public static boolean match(char[] str, char[] pattern)
     {
         String string = new String(str);
 
         String patterns = new String(pattern);
+        patterns.replaceAll(".","\\.");
+        patterns.replaceAll("\\*","+");
         boolean isMatch = Pattern.matches(patterns,string);
         System.out.println(isMatch);
         return isMatch;

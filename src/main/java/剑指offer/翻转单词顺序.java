@@ -33,14 +33,11 @@ public class 翻转单词顺序 {
             }
         }
         StringBuilder sb = new StringBuilder();
-        //sb.append(str.substring(str.indexOf(" "),str.length()-1)).append(" ");
-
-
+        sb.append(str.substring(str.lastIndexOf(" ")+1));
 
         while(!stack2.isEmpty()){
             sb.append(stack2.pop());
         }
         return sb.toString();
-
     }
 }
