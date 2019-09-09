@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pancm:war">
+    <output-path>$PROJECT_DIR$/pancm/target</output-path>
+    <root id="archive" name="pancm-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="pancm:war exploded" />
+    </root>
+  </artifact>
+</component>
