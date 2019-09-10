@@ -14,14 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d130e0aa-1c29-46d8-b2bf-20132107970b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/买卖股票.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/笨阶乘.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/nio/Client.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/nio/NioServer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/nio/Server.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LeetCode/二叉搜索树的最近公共祖先.java" afterPath="$PROJECT_DIR$/src/main/java/LeetCode/二叉搜索树的最近公共祖先.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" afterPath="$PROJECT_DIR$/src/main/java/Test.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/LeetCode/K个一组翻转链表.class" afterPath="$PROJECT_DIR$/target/classes/LeetCode/K个一组翻转链表.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/Test.class" afterPath="$PROJECT_DIR$/target/classes/Test.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/笔试/字节跳动/解码问题.class" afterPath="$PROJECT_DIR$/target/classes/笔试/字节跳动/解码问题.class" />
@@ -1605,7 +1598,7 @@
       <workItem from="1568009553892" duration="11702000" />
       <workItem from="1568041119477" duration="1132000" />
       <workItem from="1568081229261" duration="5432000" />
-      <workItem from="1568094467365" duration="7032000" />
+      <workItem from="1568094467365" duration="7044000" />
     </task>
     <task id="LOCAL-00001" summary="2019090901">
       <created>1568010246659</created>
@@ -1635,7 +1628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568083036531</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="201909010-02">
+      <created>1568107757895</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568107757896</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1671,7 +1671,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="701242000" />
+    <option name="totallyTimeSpent" value="701254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
