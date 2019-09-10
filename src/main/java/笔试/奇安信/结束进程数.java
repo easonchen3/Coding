@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class 结束进程数 {
 
-    static int num = 0;
+    private static int num = 0;
 
     public static void main(String[] args){
        Scanner scanner = new Scanner(System.in);
@@ -33,15 +33,15 @@ public class 结束进程数 {
     }
 
 
-    public static void fun1(HashMap<String,ArrayList<String>> map,String key){
+    private static void fun1(HashMap<String, ArrayList<String>> map, String key){
         if(key == null){
             return;
         }
         ArrayList<String> list = map.get(key);
         if(list!=null){
             num += list.size();
-            for (int i = 0; i < list.size(); i++) {
-                fun1(map,list.get(i));
+            for (String aList : list) {
+                fun1(map, aList);
             }
         }
     }

@@ -7,7 +7,7 @@ package LeetCode;
  */
 public class K个一组翻转链表 {
 
-    public ListNode reverseKGroup(ListNode head,int k){
+    private ListNode reverseKGroup(ListNode head, int k){
         ListNode temp = head;
         for (int i = 1; i < k && temp!=null; i++) {
             temp = temp.next;
@@ -21,9 +21,8 @@ public class K个一组翻转链表 {
         //将head-temp;也就是k个一组进行逆置，将逆置之后的头为newHead
         ListNode newHead = reverser(head);
         //递归逆序下一段
-        ListNode newTemp = reverseKGroup(t2,k);
         //将两部门连接起来
-        head.next = newTemp;
+        head.next = reverseKGroup(t2,k);
         return newHead;
     }
 
@@ -32,7 +31,7 @@ public class K个一组翻转链表 {
      * @param head
      * @return
      */
-    public ListNode reverser(ListNode head){
+    private ListNode reverser(ListNode head){
         if(head == null || head.next == null){
             return head;
         }

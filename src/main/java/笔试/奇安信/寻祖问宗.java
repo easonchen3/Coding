@@ -20,9 +20,10 @@ public class 寻祖问宗 {
         int b = scanner.nextInt();
         int min = Math.min(a,b);
         int max = Math.max(a,b);
-        for (int i = 0; i < arr.length; i++) {
-            if(min < arr[i] && max > arr[i] && arr[i] != -1){
-                System.out.println(arr[i]);return ;
+        for (int anArr : arr) {
+            if (min < anArr && max > anArr && anArr != -1) {
+                System.out.println(anArr);
+                return;
             }
         }
        scanner.close();

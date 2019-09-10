@@ -20,16 +20,13 @@ public class 解码问题 {
         LinkedList<String> result = new LinkedList<>();
         fun(strings,0,result,l);
         TreeSet<String> set = new TreeSet<>();
-        for (int i = 0; i < result.size(); i++) {
-            set.add(result.get(i));
-        }
-        Iterator<String> iterator = result.iterator();
-        while(iterator.hasNext()){
-            System.out.println(iterator.next());
+        set.addAll(result);
+        for (String aResult : result) {
+            System.out.println(aResult);
         }
     }
 
-    public static void fun(String strings,int index,LinkedList<String> result,LinkedList<Character> l){
+    private static void fun(String strings, int index, LinkedList<String> result, LinkedList<Character> l){
         if(index >= strings.length()){
             char[] arr= new char[l.size()];
             for (int i = 0; i < arr.length; i++) {
