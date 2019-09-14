@@ -43,12 +43,19 @@ public class 重建二叉树 {
             return null;
         }
         TreeNode root = new TreeNode(pre[startPre]);
-        for (int i = startIn; i <= endIn; i++)
+        for(int i = startIn; i <= endIn; i++)
             if (in[i] == pre[startPre]) {
                 root.left = reConstructBinaryTree(pre, startPre + 1, startPre + i - startIn, in, startIn, i - 1);
                 root.right = reConstructBinaryTree(pre, i - startIn + startPre + 1, endPre, in, i + 1, endIn);
                 break;
             }
         return root;
+    }
+
+    private TreeNode createTree(int[] mid,int midStart,int midEnd,int[] post,int postStart,int postEnd){
+        if (midStart > midEnd || postStart > postEnd) {
+            return null;
+        }
+        return null;
     }
 }

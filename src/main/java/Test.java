@@ -1,17 +1,13 @@
-import java.util.HashMap;
 
 public class Test {
-
     public static void main(String[] args){
-        System.out.println(fun(Long.MAX_VALUE));
+        int cnt = 0;
+        for (int i = 1 ; i <= 10000; i++) {
+            if((i%3) != 0 && i%7 != 0 && i%11 != 0){
+                cnt++;
+            }
+        }
+        System.out.println(cnt);
     }
 
-    private static long fun(long x){
-        long sum = 0;
-        while(x > 5){
-            x /= 5;
-            sum += x;
-        }
-        return sum;
-    }
 }
