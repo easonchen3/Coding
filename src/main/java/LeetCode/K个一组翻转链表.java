@@ -16,6 +16,7 @@ public class K个一组翻转链表 {
         if(temp == null){
             return head;
         }
+        //保存下一段的起点
         ListNode t2 = temp.next;
         temp.next = null;
         //将head-temp;也就是k个一组进行逆置，将逆置之后的头为newHead
