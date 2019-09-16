@@ -1,16 +1,20 @@
-package 剑指offer;
+package 笔试.明略科技;
 
+import java.util.Scanner;
 import java.util.Stack;
 
 /**
  * @Author: BaoJian.Xu
- * @Date: 2019-09-09 12:38
+ * @Date: 2019-09-15 15:33
  * @Version 1.0
  */
-public class 翻转单词顺序 {
+public class 逆置字符串 {
 
     public static void main(String[] args){
-        System.out.println(ReverseSentence("student. a am I"));
+       Scanner scanner = new Scanner(System.in);
+       String s = scanner.nextLine();
+        System.out.println(ReverseSentence(s));
+       scanner.close();
     }
 
     private static String ReverseSentence(String str) {

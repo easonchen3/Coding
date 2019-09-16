@@ -1,13 +1,13 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Test {
+
     public static void main(String[] args){
-        int cnt = 0;
-        for (int i = 1 ; i <= 10000; i++) {
-            if((i%3) != 0 && i%7 != 0 && i%11 != 0){
-                cnt++;
-            }
-        }
-        System.out.println(cnt);
+
+        List<Integer> list = Arrays.asList(1,2,3,4,5,2,3,1);
+        System.out.println();
     }
 
 }
